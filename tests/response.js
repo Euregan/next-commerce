@@ -16,6 +16,10 @@ export const prepareResponse = () => {
       internal.content = newContent
       internal.sent = true
       return external
+    },
+    end: () => {
+      internal.sent = true
+      return external
     }
   }
 
